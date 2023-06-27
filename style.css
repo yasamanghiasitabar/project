@@ -1,0 +1,275 @@
+*{
+    direction: rtl;
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+.one{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(199, 191, 191);
+
+}
+.instagram{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.vvv{
+    background-color:#576CBC;
+    text-decoration: none;
+    color:#FCFFB2;
+    margin-left: 100px;
+    float: left;
+    margin-top: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hh1{
+    font-family: 'IranNastaliq';
+    src: url('font/IranNastaliq.ttf');
+    margin-right: 40px;
+    padding-top: 30px;
+}
+nav{
+    width: 100%; height:50px;background-color:#1B9C85; position: relative;
+} 
+
+#menu{
+    list-style: none;
+}
+#menu li{
+    display: inline-block;padding: 30px;margin-top: -20px;
+}
+#menu li a{
+    text-decoration: none; color: white;
+}
+#menu li a:hover{
+    color: brown;font-weight: bold;
+}
+
+.fa-bars{
+    color: rgb(255, 255, 255);position: absolute; right: 8px; top: 10px;font-size: 40px;display: none !important;cursor: pointer;
+}
+
+#r_menu{
+    width: 150px; height: 120px; background-color: rgb(199, 191, 191);position: absolute; right: 5px; top:50px;display: none;    list-style: none;
+
+}
+#r_menu li{
+    border-bottom: 1px solid black;
+    color: #1B9C85;
+    font-weight: bolder;
+}
+#r_menu li a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width:500px){
+    #menu{
+        display: none;
+    }
+    .fa-bars{
+        display: block !important;
+    }
+    
+    .tenn{
+        width: 100%;
+    }
+}
+
+#content{
+    background-color: rgb(172, 172, 238);width: 100%; height: 600px; opacity: 0.5;
+}
+.searchbar{
+    position: absolute;left: 20px;top: 7px;
+}
+.fa-search{
+    position: absolute;left: 25px;top: 10px;color: gray;
+}
+.logo{
+    
+    margin-left: 30px;
+    margin-top:50px;
+     opacity: 1;
+    float: left;
+}
+.content-text{
+    rotate:90deg;
+    float: right;
+    position: absolute;top: 350px;right: -90px;
+    font-size:xx-large
+}
+.threee{
+    width: 100%;
+    height:50px;
+    background-color:#576CBC;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10px;
+    color: #B7B7B7;
+}
+.four{
+    background-color:#FFD3A3;
+
+    height:100%;
+}
+.box{
+    height: 300px;
+    clear: both;
+  
+    margin-left: 5px;
+    text-align: center;
+    margin-bottom: 100px;
+    background-color:#FCFFB2 !important;
+    margin-right: 20px;
+
+    
+ }   
+
+.box img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    
+
+}    
+.txt a{
+    background-color: rgb(120, 160, 224);
+    display: block;
+    padding: 20px;
+    margin-top: 30px;
+    color: black;
+    text-decoration: none;
+    
+}
+.txt{
+    border-top: 1px dashed blue;
+    
+}
+.five{
+    width: 100%;
+    height:50px;
+    background-color:#576CBC;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10px;
+    color: #B7B7B7;
+}
+
+
+
+.eight{
+    height: 20px;
+    background-color: white;
+}
+.nine{
+    width: 100%;
+    height:50px;
+    background-color:#576CBC;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 40;
+    color: #B7B7B7;
+
+}
+.nine-text{
+    padding-top: 10px;
+}
+.ten{
+    height: 400px;
+    background-color: white;
+
+}
+.tenn{
+width: 40%;
+height: 100%;
+float: left;
+background-color: #B7B7B7;
+
+}
+.bg-primary{
+    height: 200px;
+    background-color: #B7B7B7 !important;
+
+}
+#moodal{
+    width: 100%;height: 100%;position: fixed;top:0;left:0;background-color: rgba(0, 0, 0,0.5);display: none;z-index: 1000;
+
+}
+
+.modal{
+   background-color: white;width: 400px;height: 400px;margin: 150px auto;position: relative;animation: zoom 1s;
+}
+
+#moodal .modal input[type=text],input[type=password],input[type=submit]{
+   display: block;width: 100%;margin-top: 10px;height:50px;
+}
+
+.pic{
+   width: 100px;height: 100px;background-color: blue;border-radius: 50%;box-shadow: 2px 2px 2px gray;margin: 20px auto;
+}
+
+.close{
+   position: absolute;top:2px;left: 2px;font-size: 20px;cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+    .tenn{
+        width: 100% !important; 
+        text-align: center;
+    }
+    .tenn input[type=text],[type=submit],[type=email]{
+        width: 50% !important;
+    }
+    .tenn textarea{
+        width: 50% !important;  
+    }
+}
+
+@media screen and (max-width:500px){
+  .imggg{
+    width: 100%;
+  } 
+ .hh1{
+    display: block;font-size:larger;
+ }  
+ .vvv{
+    margin-left: 50px;
+ }
+
+.content-text{
+    position: absolute;top: 400px;
+}
+}
+input[type=text],[type=submit],[type=email]{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+/* .modal-body{
+    width: 60%;height: 300px;
+    background-color: aqua;
+    
+    } */
+    .modal-body ul li{
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-line: none;
+        
+        
+    }
+    .modal-body ul li a{
+        text-decoration: none;
+        padding-left: 30px;
+        color: black;
+    }
+    .border_box{
+        
+        height: 150px;
+        
+        display: none;
+    }

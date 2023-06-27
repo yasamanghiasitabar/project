@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+<body>
+    <section class="one">
+        <img src="pic/pngtree-instagram-icon-png-image_6315974.png" alt="instagram" title="instagram" class="instagram">
+        <img src="pic/Telegram_logo.svg.png" alt="Telegram" title="Telegram" class="instagram">
+        <button type="button" class="vvv btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">ورود/ثبت نام</button>
+    
+    
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" d tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"> ثبت نام/ورود</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li onclick="show('register')"><a href="#">ثبت نام</a></li>
+          <li onclick="show('login')"><a href="#">ورود</a></li>
+      </ul>
+      <div class="border_box" id="register">
+      <form >
+        <div class="">
+          <label for="recipient-name" class="col-form-label">نام:</label>
+          <input type="text" class="form-control" id="recipient-name">
+        </div>
+        <div class="">
+          <label for="name" class="col-form-label">ایمیل:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="">
+          <label for="pass" class="col-form-label">رمز</label>
+          <input type="text" class="form-control" id="pass">
+          
+        </div>
+        <button type="button" class="btn btn-primary mt-1">ثبت نام </button>
+      </form></div>
+      <div class="border_box" id="login">
+          <form >
+              <div class="">
+                <label for="recipient-name" class="col-form-label">نام:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="">
+                <label for="name" class="col-form-label">ایمیل:</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <button type="button" class="btn btn-primary mt-1">ورود </button>
+            </form>
+      </div>
+      </div>
+       
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">فرم:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" class=""></button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                    <li onclick="show('register')"><a href="#">ثبت نام</a></li>
+                    <li onclick="show('login')"><a href="#">ورود</a></li>
+                </ul>
+                <div class="border_box" id="register">
+                <form >
+                  <div class="mb-1">
+                    <label for="recipient-name" class="col-form-label">نام:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-1">
+                    <label for="name" class="col-form-label">ایمیل:</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="mb-1">
+                    <label for="pass" class="col-form-label">رمز</label>
+                    <input type="text" class="form-control" id="pass">
+                    
+                  </div>
+                  <button type="button" class="btn btn-primary">ثبت نام </button>
+                </form></div>
+                <div class="border_box" id="login">
+                    <form >
+                        <div class="mb-1">
+                          <label for="recipient-name" class="col-form-label">نام:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-1">
+                          <label for="name" class="col-form-label">ایمیل:</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                        <button type="button" class="btn btn-primary">ورود </button>
+                      </form>
+                </div>
+              </div><br><br><br>
+              
+            </div>
+          </div>
+        </div> -->
+    
+        <h1 class="hh1">فروشگاه آنلاین ساعت</h1>
+    </section>
+    <nav>
+        <ul id="menu">
+            <li><a href="#">صفحه اصلی</a></li>
+            <li><a href="#mahsoolat">محصولات</a></li>
+            <li><a href="#pishnahad">پیشنهاد ویژه </a></li>
+            <li><a href="#ertebat"> ارتباط باما </a></li>
+        </ul>
+
+        <div onclick="show_menu()"> <i class="fa fa-bars " aria-hidden="true" ></i></div>
+       
+
+
+        <div id="r_menu">
+            <ul id="list">
+              <li><a href="#">صفحه اصلی</a></li>
+              <li><a href="#mahsoolat">محصولات</a></li>
+              <li><a href="#pishnahad">پیشنهاد ویژه </a></li>
+              <li><a href="#ertebat"> ارتباط باما </a></li>
+            </ul>
+        </div>
+        
+        <input type="search" placeholder="...جستجو" class="searchbar">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </nav>
+
+    <section id="content" onclick="hide_menu()">
+        <img src="pic/2.png" class="logo"></section>
+        <div class="content-text">تخفیف ویژه دانشجویان</div>
+    </section>
+    <section class="threee">
+        <div id="mahsoolat">محصولات</div>
+       </section>
+
+       <div class="four">
+        <div class="row">
+            <div class="col-8 col-sm-8 col-md-3 col-lg-3 bg-danger  mx-auto my-5 border border-2 border-dark-subtle rounded-2 box">
+        <img src="pic/1-black-dial-digital-watch-for-boys-black-sports-watch-men-original-imagd4yzszbgba39.webp" class="rounded-5 my-3 mt-5">
+       <div class="txt mx-auto my-2">
+        <div>(قیمت)</div>
+        <a href="#" class="border border-2 rounded-5">اضافه به سبد خرید </a>
+       </div></div>
+
+       <div class="  col-8 col-sm-8 col-md-3 col-lg-3 bg-danger  mx-auto my-5 border border-2 border-dark-subtle rounded-2 box">
+        <img src="pic/apple-watch-series-8-cellular-41mm-product-red-aluminum-product-red-sport-band-34fr-screen-usen-mnv13ll-a.jpg" class="rounded-5 my-3 mt-5">
+       <div class="txt mx-auto my-2">
+        <div>(قیمت)</div>
+        <a href="#" class="border border-2 rounded-5">اضافه به سبد خرید </a>
+       </div></div>
+       <div class="col-8  col-sm-8 col-md-3 col-lg-3 bg-danger  mx-auto my-5 border border-2 border-dark-subtle rounded-2 box">
+        <img src="pic/m126283rbr-0031.webp" class="rounded-5 my-3 mt-5">
+       <div class="txt mx-auto my-2">
+        <div>(قیمت)</div>
+        <a href="#" class="border border-2 rounded-5">اضافه به سبد خرید </a>
+       </div></div>
+       <div class=" col-8 col-sm-8 col-md-3 col-lg-3 bg-danger  mx-auto my-5 border border-2 border-dark-subtle rounded-2 box">
+        <img src="pic/MQDY3ref_VW_34FR+watch-49-titanium-ultra_VW_34FR_WF_CO+watch-face-49-alpine-ultra_VW_34FR_WF_CO.jpg" class="rounded-5 my-3 mt-5">
+       <div class="txt mx-auto my-2">
+        <div>(قیمت)</div>
+        <a href="#" class="border border-2 rounded-5">اضافه به سبد خرید </a>
+       </div></div></div></div>
+       <section class="five">
+        <div id="pishnahad">پیشنهاد ویژه</div>
+       </section>
+
+       <div class="row hi">
+       
+        <div class=" col-sm-12 col-md-6 col-lg-6 text-center mt-4 sixxx"><img src="pic/apple-watch-series-8-cellular-41mm-product-red-aluminum-product-red-sport-band-34fr-screen-usen-mnv13ll-a.jpg" class="hi-img  " style="width: 150px; height: 150px;"></div>
+         <div class="hi-text col-sm-12 col-md-6 col-lg-6 text-center sixxx">
+همه ما وقتی که میخوایم یه ساعت مچی اورجینال بخریم نگران این هستیم که نکنه فروشنده یه ساعت مچی تقلبی رو به جای یه ساعت مچی اصل بهمون بندازه؛ واسه همین هم قبل از خرید ساعت اورجینال کلی ترفند برای تشخیص ساعت اصل از تقلبی یاد میگیریم که کسی نتونه سرمونو کلاه بزاره؛ اما دیگه لازم نیست برای خرید ساعت مچی نگران این مسئله باشید، فقط کافیه یه سری به فروشگاه آنلاین ساعت کنز بزنین و هر ساعت اورجینالی که دوست داشتینو با قیمت مناسب و 2 سال گارانتی خریداری کنین. از اون جایی که فروشگاه آنلاین ساعت کنز یکی از قدیمی‌ترین فروشگاه‌ها در زمینه فروش انواع ساعت‌های مچی در برندهای متعدده و همه ساعت‌های اورجینالی که از این فروشگاه خریداری میکنین تا 2 سال گارانتی دارن، میتونین با خیال راحت ساعت موردنظرتونو تو هر برند و با هر ویژگی که دوست دارین به صورت ایمن از این فروشگاه خریداری کنین. درضمن نیازی نیست حین خرید ساعت اصل تو فروشگاه ساعت کنز نگران تنوع ساعتای این فروشگاه باشین چون شما هر مدل ساعتی که بخواین از ساعت مچی مردانه گرفته تا ساعت مچی زنانه، بچه‌گانه و حتی ساعت‌های ست رو میتونین از این فروشگاه در کمترین زمان و به راحت‌ترین شکل ممکن خریداری کنین.</div>
+    </div>
+
+    <div class="seven text-center mt-2 pt-2" style="background-color: #1B9C85;">
+      <progress value="20" min="0" max="100" class="value">
+     </progress>
+     <div class="value-text">تعدادمشتریان</div><br>
+  </div>
+       <section class="eight">
+       </section>
+       <section class="nine">
+        <div class="nine-text" id="ertebat">ارتباط با ما</div>
+       </section>
+
+
+       <section class="ten">
+        <div class="row">
+       
+        <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-6 mx-auto ">
+            <section class="tennn mt-3">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 bg-primary col-lg-6 border border-5 ">
+                        <div class="d-block text-center mt-5"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="d-block text-center">آدرس</div>
+                        <div class="d-block text-center">اراک خیابان قایم مقام</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 bg-primary col-lg-6 border border-5">
+                        <div class="d-block text-center mt-5"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="d-block text-center">تلفن</div>
+                        <div class="d-block text-center">086-322455</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 bg-primary col-lg-6 border border-5">
+                        <div class="d-block text-center mt-5"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="d-block text-center">ایمیل</div>
+                        <div class="d-block text-center">design@info.com</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 bg-primary col-lg-6 border border-5">
+                        <div class="d-block text-center mt-5"> <i class='fas fa-clock'></i> </div>
+                        <div class="d-block text-center">ساعت کاری</div>
+                        <div class="d-block text-center">9-17</div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-6 mx-auto tenn ">
+            <div class="d-block">نظرات و پیشنهادات خود را با مادر میان بگذارید. </div><br>
+            <form action="login.php" class="d-block ">
+                <input type="text" id="name" placeholder="نام"><br><br>
+                <input type="email" placeholder="ایمیل"><br><br>
+                <textarea rows="10" cols="40" placeholder="نظرات و پیشنهادات "></textarea><br><br>
+                <input type="submit" value="ارسال" class="mx-auto w-50">
+            </form>
+            
+        </div>
+    </div>
+       </section>
+   
+    
+
+
+
+
+       
+       
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
